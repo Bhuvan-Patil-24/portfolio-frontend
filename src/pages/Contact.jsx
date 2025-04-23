@@ -109,7 +109,10 @@ function Contact() {
 
     setIsLoading(true);
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/send-email`, {
+      // Fix URL construction to prevent double slashes
+      const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const cleanBaseUrl = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+      const response = await fetch(`${cleanBaseUrl}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
