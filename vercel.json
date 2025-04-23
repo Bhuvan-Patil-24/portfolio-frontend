@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "DISABLE_ESLINT_PLUGIN": "true",
+    "ESLINT_NO_DEV_ERRORS": "true"
+  }
+} 
