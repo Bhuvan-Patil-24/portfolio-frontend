@@ -41,12 +41,12 @@ To run the frontend locally, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Bhuvan-Patil-24/Portfolio_Website.git
+   git clone https://github.com/Bhuvan-Patil-24/portfolio-frontend.git
    ```
 
 2. Navigate to the frontend directory:
    ```
-   cd Portfolio_Website/Frontend
+   cd portfolio-frontend
    ```
 
 3. Install dependencies:

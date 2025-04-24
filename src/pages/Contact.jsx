@@ -182,14 +182,14 @@ function Contact() {
               <IconContainer>
                 <PhoneIcon />
               </IconContainer>
-              <Typography>+91 1234567890</Typography>
+              <Typography>+91 9359281871</Typography>
             </ContactInfo>
 
             <ContactInfo>
               <IconContainer>
                 <LocationOnIcon />
               </IconContainer>
-              <Typography>Pune, Maharashtra, India</Typography>
+              <Typography>Nagpur, Maharashtra, India</Typography>
             </ContactInfo>
           </Box>
 

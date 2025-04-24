@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Container, Typography, Grid, Paper, styled } from '@mui/material';
 import { motion } from 'framer-motion';
 import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School';
 
 const ExperienceContainer = styled(Box)({
   padding: '6rem 0',
