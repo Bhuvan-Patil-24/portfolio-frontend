@@ -453,7 +453,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  React, JavaScript, HTML5, CSS3, Material-UI, Responsive Design
+                  React, JavaScript, HTML5, CSS3, Responsive Design
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -481,7 +481,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Node.js, Express, MongoDB, RESTful APIs, Authentication
+                  Node.js, Express, MongoDB, Authentication
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -509,7 +509,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Full Stack Development, Web Architecture, Performance Optimization
+                  Full Stack Development, MERN Stack
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -537,7 +537,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  OAuth, JWT, Data Protection, Security Best Practices
+                  OAuth, JWT
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -565,7 +565,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  User Experience, Interface Design, Wireframing, Prototyping
+                  User Experience, Interface Design, Prototyping
                 </Typography>
               </SkillCard>
               </motion.div>
