@@ -162,13 +162,13 @@ function Contact() {
             mb: 4,
           }}
         >
-          Get in Touch
+          Convey your thoughts!
         </Typography>
 
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4 }}>
           <Box sx={{ flex: 1 }}>
             <Typography variant="h5" gutterBottom sx={{ color: '#2C3639', mb: 3 }}>
-              Contact Information
+              Contact Me Here
             </Typography>
             
             <ContactInfo>
