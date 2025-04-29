@@ -39,16 +39,6 @@ const ActionButton = styled(Button)(({ theme }) => ({
   marginTop: '1rem',
 }));
 
-const SkillChip = styled(Chip)(({ theme }) => ({
-  margin: '0.5rem',
-  backgroundColor: `rgba(${parseInt(theme.palette.secondary.main.slice(1, 3), 16)}, ${parseInt(theme.palette.secondary.main.slice(3, 5), 16)}, ${parseInt(theme.palette.secondary.main.slice(5, 7), 16)}, 0.1)`,
-  color: theme.palette.secondary.main,
-  border: `1px solid ${theme.palette.secondary.main}`,
-  '&:hover': {
-    backgroundColor: `rgba(${parseInt(theme.palette.secondary.main.slice(1, 3), 16)}, ${parseInt(theme.palette.secondary.main.slice(3, 5), 16)}, ${parseInt(theme.palette.secondary.main.slice(5, 7), 16)}, 0.2)`,
-  },
-}));
-
 const SkillCard = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(3),
   height: '100%',
@@ -81,17 +71,6 @@ const AnimatedTextWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-}));
-
-const AnimatedTextChanging = styled(Typography)(({ theme }) => ({
-  fontWeight: 'bold',
-  color: '#FFA500',
-  marginLeft: '8px',
-  position: 'relative',
-  [theme.breakpoints.down('sm')]: {
-    marginLeft: 0,
-    marginTop: '8px',
-  },
 }));
 
 const skills = [
