@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Container, Typography, Button, styled, Grid, Chip, Card, CardContent, Paper } from '@mui/material';
+import { Box, Container, Typography, Button, styled, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import DownloadIcon from '@mui/icons-material/Download';
 import CodeIcon from '@mui/icons-material/Code';
+import TerminalIcon from '@mui/icons-material/Terminal';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import StorageIcon from '@mui/icons-material/Storage';
 import WebIcon from '@mui/icons-material/Web';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import SecurityIcon from '@mui/icons-material/Security';
 import { useTheme } from '@mui/material/styles';
+import InsightsIcon from '@mui/icons-material/Insights';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+
 
 const HeroContainer = styled(Box)(({ theme }) => ({
   background: '#fff',
@@ -72,39 +75,6 @@ const AnimatedTextWrapper = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   alignItems: 'flex-start',
 }));
-
-const skills = [
-  {
-    title: 'Programming Languages',
-    icon: <CodeIcon sx={{ fontSize: 30 }} />,
-    items: ['Python', 'JavaScript', 'Java', 'C++'],
-  },
-  {
-    title: 'Data Science',
-    icon: <DataObjectIcon sx={{ fontSize: 30 }} />,
-    items: ['Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn'],
-  },
-  {
-    title: 'Machine Learning',
-    icon: <PsychologyIcon sx={{ fontSize: 30 }} />,
-    items: ['Deep Learning', 'NLP', 'Computer Vision', 'TensorFlow'],
-  },
-  {
-    title: 'Database',
-    icon: <StorageIcon sx={{ fontSize: 30 }} />,
-    items: ['MySQL', 'MongoDB', 'PostgreSQL', 'SQLite'],
-  },
-  {
-    title: 'Web Development',
-    icon: <WebIcon sx={{ fontSize: 30 }} />,
-    items: ['React', 'Node.js', 'Express', 'MERN Stack'],
-  },
-  {
-    title: 'Tools & Others',
-    icon: <DesignServicesIcon sx={{ fontSize: 30 }} />,
-    items: ['Git', 'Docker', 'AWS', 'Linux'],
-  },
-];
 
 const AboutSection = styled(Box)(({ theme }) => ({
   padding: theme.spacing(8, 0),
@@ -435,14 +405,15 @@ function Hero() {
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Frontend Development
+                  Web Development
                 </Typography>
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  React, JavaScript, HTML5, CSS3, Responsive Design
+                  Frontend: HTML5, CSS3, JavaScript, React
+                  Backend: NodeJS, ExpressJS, MongoDB, MySQL
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -456,21 +427,22 @@ function Hero() {
               >
               <SkillCard>
                 <SkillIcon>
-                  <StorageIcon fontSize="large" />
+                  <InsightsIcon fontSize="large" />
                 </SkillIcon>
                   <Typography 
                     variant="h6" 
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Backend Development
+                  Data Science & Analysis
                 </Typography>
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Node.js, Express, MongoDB, Authentication
+                  Power BI, Tableau, MSExcel, EDA, Pandas,
+                  Numpy, Matplotlib, Seaborn, Scikit-learn
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -484,21 +456,22 @@ function Hero() {
               >
               <SkillCard>
                 <SkillIcon>
-                  <WebIcon fontSize="large" />
+                  <PrecisionManufacturingIcon fontSize="large" />
                 </SkillIcon>
                   <Typography 
                     variant="h6" 
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Web Development
+                  Machine learning
                 </Typography>
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Full Stack Development, MERN Stack
+                  Mathematics, Prompt Engineering,  NLP, TensorFlow,
+                  Deep Learning, Jupyter
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -512,21 +485,21 @@ function Hero() {
               >
               <SkillCard>
                 <SkillIcon>
-                  <SecurityIcon fontSize="large" />
+                  <TerminalIcon fontSize="large" />
                 </SkillIcon>
                   <Typography 
                     variant="h6" 
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Security
+                  Programming Languages
                 </Typography>
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  OAuth, JWT
+                  C, JavaScript, Python, SQL
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -547,14 +520,14 @@ function Hero() {
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  UI/UX Design
+                  Designing & Diagraming
                 </Typography>
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  User Experience, Interface Design, Prototyping
+                  Canva, Figma, Draw.io
                 </Typography>
               </SkillCard>
               </motion.div>
@@ -575,14 +548,14 @@ function Hero() {
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Problem Solving
+                  Tools & Other Skills
                 </Typography>
                   <Typography 
                     variant="body2" 
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Algorithm Design, Data Structures, Debugging, Optimization
+                  Git, Linux, DSA, OOPs, Debugging, Adaptability
                 </Typography>
               </SkillCard>
               </motion.div>

@@ -249,7 +249,7 @@ function Layout({ children }) {
               </FooterLink>
             </Box>
             <Typography variant="body2">
-              © {new Date().getFullYear()} Bhuvan Patil. All rights reserved.
+              © {new Date().getFullYear()} Bhuvan Patil - Professional Porfolio
             </Typography>
           </Box>
         </Container>
