@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: none;
+  /* cursor: none; */
 }
 
 html, body {
@@ -32,7 +32,7 @@ body {
 }
 
 /* Custom Cursor */
-.cursor {
+/* .cursor {
   width: var(--cursor-size);
   height: var(--cursor-size);
   border: 2px solid var(--secondary-color);
@@ -44,10 +44,10 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 5px var(--secondary-color),
               0 0 10px var(--secondary-color);
-  animation: pulse 2s infinite;
-}
+  /* animation: pulse 2s infinite; */
+  /* }  */
 
-.cursor-follower {
+/* .cursor-follower {
   width: var(--cursor-size);
   height: var(--cursor-size);
   background: var(--secondary-color);
@@ -60,7 +60,7 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 8px var(--secondary-color);
   animation: pulse 2s infinite;
-}
+} */
 
 @keyframes pulse {
   0% {
@@ -78,7 +78,7 @@ body {
 }
 
 /* Cursor Hover Effects */
-a:hover ~ .cursor,
+/* a:hover ~ .cursor,
 button:hover ~ .cursor,
 [role="button"]:hover ~ .cursor {
   width: var(--cursor-hover-size);
@@ -89,9 +89,9 @@ button:hover ~ .cursor,
   transition: all 0.1s ease;
   box-shadow: 0 0 10px var(--secondary-color),
               0 0 20px var(--secondary-color);
-}
+} */
 
-a:hover ~ .cursor-follower,
+/* a:hover ~ .cursor-follower,
 button:hover ~ .cursor-follower,
 [role="button"]:hover ~ .cursor-follower {
   width: var(--cursor-hover-size);
@@ -99,7 +99,7 @@ button:hover ~ .cursor-follower,
   opacity: 0.2;
   transition: all 0.1s ease;
   box-shadow: 0 0 12px var(--secondary-color);
-}
+} */
 
 /* Responsive styles */
 @media (max-width: 768px) {

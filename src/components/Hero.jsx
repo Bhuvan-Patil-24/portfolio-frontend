@@ -360,7 +360,7 @@ function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
           <Typography variant="body1" paragraph>
-            I am a passionate and dedicated software developer with a strong foundation in computer science and a keen interest in creating innovative solutions to complex problems. My journey in technology began with a curiosity about how things work, which has evolved into a deep understanding of software development principles and practices.
+          I'm Bhuvan Patil, a tech enthusiast and aspiring data scientist currently in my 3rd year pursuing a B.Tech in Computer Science Engineering with Honors in Data Science at SBJITMR, Nagpur.
           </Typography>
           </motion.div>
           <motion.div
@@ -370,7 +370,7 @@ function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
           <Typography variant="body1" paragraph>
-            With a background in both frontend and backend development, I specialize in building robust, scalable, and user-friendly applications. I believe in writing clean, maintainable code and following best practices to ensure the highest quality in my work.
+          I'm passionate about exploring the intersections of data science, machine learning, and web development. My academic journey has equipped me with a strong foundation in programming fundamentals, while my self-directed learning has expanded my expertise across multiple domains.
           </Typography>
           </motion.div>
           <motion.div
@@ -378,6 +378,16 @@ function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.6 }}
+          >
+          <Typography variant="body1" paragraph>
+          With a strong mathematical background and programming skills, I develop impactful solutions while fostering collaboration. My proactive approach and innovative thinking drive me to deliver high-quality results in every project I undertake.
+          </Typography>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
           <Typography variant="body1" paragraph>
             I'm constantly learning and staying up-to-date with the latest technologies and industry trends. This commitment to continuous improvement allows me to bring fresh perspectives and innovative solutions to every project I work on. When I'm not coding, you can find me reading about new technologies, attending tech meetups, or working on personal projects that challenge me to grow as a developer.
