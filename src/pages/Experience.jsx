@@ -52,23 +52,37 @@ const HighlightText = styled('span')({
 const experiences = [
   {
     date: 'June 2024',
-    title: 'Cybersecurity Intern',
-    company: 'TechnoHacks EduTech Official',
-    description: 'Assisted in the development and enforcement of security policies related to mobile devices and remote access.',
-    icon: <WorkIcon />,
-  },
-  {
-    date: 'June 2024',
     title: 'ML & DS Intern',
     company: 'Codemate IT Services (OPC) Pvt. Ltd.',
     description: 'Gained valuable experience working within a specific industry, applying learned concepts directly into relevant work situations.',
     icon: <WorkIcon />,
   },
   {
-    date: 'July 2024 - March 2025',
-    title: 'Python Intern & AI/ML Trainee',
-    company: 'CodSoft & EduSkills Foundation (AICTE)',
-    description: 'Contributed to the development and maintenance of software applications. Gained hands-on experience in Machine learning projects and worked on python libraries like tensorflow, scikit-learn and various neural network models.',
+    date: 'July 2024',
+    title: 'Python Intern',
+    company: 'CodSoft',
+    description: 'Contributed to the development and maintenance of software applications using Python.',
+    icon: <WorkIcon />,
+  },
+  {
+    date: 'January 2025 - March 2025',
+    title: 'GOOGLE AI/ML Trainee',
+    company: 'EduSkills Foundation (AICTE)',
+    description: 'Gained hands-on experience in Machine learning projects and worked on python libraries like tensorflow, scikit-learn and various neural network models.',
+    icon: <WorkIcon />,
+  },
+  {
+    date: 'April 2025 - June 2025',
+    title: 'GOOGLE Data Analytics Trainee',
+    company: 'EduSkills Foundation (AICTE)',
+    description: '--currently aquiring this experince--',
+    icon: <WorkIcon />,
+  },
+  {
+    date: 'June 2025',
+    title: 'Machine Learning Intern',
+    company: 'revealed soon',
+    description: '--will be aquiring this experince next month--',
     icon: <WorkIcon />,
   },
 ];
