@@ -138,6 +138,9 @@ function Projects() {
                           backgroundColor: 'rgba(255, 165, 0, 0.1)',
                         },
                       }}
+                      href={project.githubLink}
+                      target="_blank" 
+                      rel="noopener noreferrer"
                     >
                       GitHub
                     </Button>
