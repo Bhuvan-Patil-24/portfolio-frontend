@@ -44,10 +44,17 @@ const TechChip = styled(Chip)({
 
 const projects = [
   {
+    title: 'Blood Group Detection using Fingerprint & ML',
+    description: 'Build a machine learning-based system that predicts blood groups from fingerprint images using deep learning and image processing techniques.',
+    technologies: ['Python', 'Machine Learning', 'Jupyter', 'Flask', 'SQLite'],
+    githubLink: 'https://github.com/Bhuvan-Patil-24/Blood_group_detection_using_fingerprint',
+    demoLink: '#',
+  },
+  {
     title: 'Titanic Survival Prediction',
     description: 'Implemented various machine learning algorithms to predict passenger survival on the Titanic dataset.',
     technologies: ['Python', 'Machine Learning', 'Data Analysis'],
-    githubLink: '#',
+    githubLink: 'https://github.com/Bhuvan-Patil-24/Titanic_survival_prediction',
     demoLink: '#',
   },
   {
@@ -60,22 +67,22 @@ const projects = [
   {
     title: 'Bookstore E-commerce',
     description: 'Developed a full-stack e-commerce website for a bookstore using MERN stack.',
-    technologies: ['MERN Stack', 'JavaScript', 'MongoDB'],
-    githubLink: '#',
+    technologies: ['React', 'JavaScript', 'MongoDB'],
+    githubLink: 'https://github.com/Bhuvan-Patil-24/Bookstore_Ecommerce',
     demoLink: '#',
   },
   {
     title: 'Save Soil Website Clone',
     description: 'Cloned the frontend of Sadhguru\'s Save Soil website with modern UI/UX design.',
-    technologies: ['React', 'CSS', 'JavaScript'],
-    githubLink: '#',
+    technologies: ['HTML', 'CSS'],
+    githubLink: 'https://github.com/Bhuvan-Patil-24/Save_Soil',
     demoLink: '#',
   },
   {
     title: 'Subscription Box Analysis Dashboard',
     description: 'Created an interactive Power BI dashboard for analyzing subscription box service data.',
     technologies: ['Power BI', 'Data Analysis', 'Visualization'],
-    githubLink: '#',
+    githubLink: 'https://github.com/Bhuvan-Patil-24/Data_Visualization_Dashboards',
     demoLink: '#',
   },
 ];
