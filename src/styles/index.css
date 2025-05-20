@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #2A403D; /* Dark Green */
-  --secondary-color: #F1A638; /* Golden Yellow */
+  --primary-color: #2A403D; /* you can change the primary color (default color is #2A403D) */
+  --secondary-color: #F1A638; /* you can change the secondary color (default color is #F1A638) */
   --text-color: #333333;
   --background-color: #ffffff;
   --cursor-size: 20px;
