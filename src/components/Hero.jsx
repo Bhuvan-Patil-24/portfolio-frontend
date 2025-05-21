@@ -252,7 +252,7 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Download Resume
+                  Resume
                 </ActionButton>
               </motion.div>
             </Grid>
