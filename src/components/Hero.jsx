@@ -555,7 +555,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Git, Linux, DSA, OOPs, Debugging, Adaptability
+                  Git, Linux, DSA, OOPs, Debugging, Adaptability, Prompt Engineering
                 </Typography>
               </SkillCard>
               </motion.div>
