@@ -470,8 +470,8 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Mathematics, Prompt Engineering,  NLP, TensorFlow,
-                  Deep Learning, Jupyter
+                  Mathematics, NLP, TensorFlow, Computer Vision,
+                  Deep Learning, Jupyter, Scikit-learn
                 </Typography>
               </SkillCard>
               </motion.div>
