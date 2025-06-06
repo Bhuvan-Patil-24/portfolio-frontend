@@ -79,10 +79,10 @@ const experiences = [
     icon: <WorkIcon />,
   },
   {
-    date: 'June 2025',
-    title: 'Machine Learning Intern',
+    date: 'May 2025 - June 2025',
+    title: 'AI Engineer (Internship)',
     company: 'Maharashtra Remote Sensing Application Centre (MRSAC)',
-    description: '',
+    description: 'Developing a personal voice assistant (NexusAI) using Python, NLP to assist in daily tasks and provide information on various topics which helps in enhancing productivity and accessibility as well as time management.',
     icon: <WorkIcon />,
   },
 ];
