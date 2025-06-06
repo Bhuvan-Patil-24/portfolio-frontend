@@ -442,7 +442,7 @@ function Hero() {
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
                   Power BI, Tableau, MSExcel, EDA, Pandas,
-                  Numpy, Matplotlib, Seaborn, Scikit-learn
+                  Numpy, Matplotlib, Seaborn
                 </Typography>
               </SkillCard>
               </motion.div>
