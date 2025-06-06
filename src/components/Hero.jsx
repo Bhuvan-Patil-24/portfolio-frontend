@@ -100,7 +100,6 @@ function Hero() {
   
   const animatedTexts = [
     "Data Science",
-    "Data Analytics",
     "Machine Learning",
     "Deep Learning",
     "Large Language Models",
@@ -227,7 +226,7 @@ function Hero() {
                     fontSize: { xs: '0.9rem', sm: '1rem' }
                   }}
                 >
-                  A creative professional with expertise in Python, DS, ML, and WebDev, specializing in areas like DSA, OOP, and DBMS. Passionate about problem-solving and building innovative digital experiences.
+                  A creative professional with expertise in Python, WebDev, DSA, OOP, and DBMS, specializing in areas like  Artificial Intelligence, Data Science & Machine Learning.
                 </Typography>
               </motion.div>
 
@@ -555,7 +554,7 @@ function Hero() {
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Git, Linux, DSA, OOPs, Debugging, Adaptability, Prompt Engineering
+                  Git, Linux, DSA, OOPs, Debugging, Adaptability, Prompt Engineering, Time Management
                 </Typography>
               </SkillCard>
               </motion.div>
