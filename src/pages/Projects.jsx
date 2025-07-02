@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: 'Blood Group Detection using Fingerprint & ML',
-    description: 'Built a machine learning-based system that predicts blood groups from fingerprint images using deep learning and image processing techniques.',
+    description: 'Built a CNN-based system that predicts blood groups from fingerprint images using a dataset of 6,000 fingerprint images, image processing and feature extraction techniques achieving 91% test accuracy with sub-second inference time',
     technologies: ['Python', 'Machine Learning', 'Jupyter', 'Flask', 'SQLite'],
     githubLink: 'https://github.com/Bhuvan-Patil-24/Blood_group_detection_using_fingerprint',
     demoLink: '#',
