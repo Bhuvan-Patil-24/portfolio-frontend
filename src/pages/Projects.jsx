@@ -44,8 +44,15 @@ const TechChip = styled(Chip)({
 
 const projects = [
   {
+    title: 'NexusAI - Personal Voice Assistant',
+    description: 'Developed a personal voice assistant with Python & NLP during my Internship at MRSAC, VNIT, Nagpur. It\'s designed to help you interact with your computer using natural voice commands while providing a modern, customizable experience.',
+    technologies: ['Python', 'NLP', 'pyttsx3', 'Streamlit', 'SQLite'],
+    githubLink: 'https://github.com/Bhuvan-Patil-24/NexusAI-Personal_Voice_Assistance',
+    demoLink: '#',
+  },
+  {
     title: 'Blood Group Detection using Fingerprint & ML',
-    description: 'Build a machine learning-based system that predicts blood groups from fingerprint images using deep learning and image processing techniques.',
+    description: 'Built a machine learning-based system that predicts blood groups from fingerprint images using deep learning and image processing techniques.',
     technologies: ['Python', 'Machine Learning', 'Jupyter', 'Flask', 'SQLite'],
     githubLink: 'https://github.com/Bhuvan-Patil-24/Blood_group_detection_using_fingerprint',
     demoLink: '#',

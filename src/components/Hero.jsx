@@ -102,10 +102,9 @@ function Hero() {
     "Data Science",
     "Machine Learning",
     "Deep Learning",
-    "Large Language Models",
-    "Generative AI",
     "Natural Language Processing",
-    "Computer Vision"
+    "Large Language Models",
+    "Generative AI"
   ];
 
   const theme = useTheme();

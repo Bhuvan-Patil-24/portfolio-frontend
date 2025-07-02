@@ -52,37 +52,37 @@ const HighlightText = styled('span')({
 const experiences = [
   {
     date: 'June 2024',
-    title: 'ML & DS Intern',
+    title: 'ML & DS - Intern',
     company: 'Codemate IT Services (OPC) Pvt. Ltd.',
     description: 'Assisted in developing machine learning models and data analysis tools, enhancing the company\'s AI capabilities.',
     icon: <WorkIcon />,
   },
   {
     date: 'July 2024',
-    title: 'Python Intern',
+    title: 'Python Programming - Intern',
     company: 'CodSoft',
     description: 'Contributed to the development and maintenance of software applications using Python.',
     icon: <WorkIcon />,
   },
   {
     date: 'January 2025 - March 2025',
-    title: 'GOOGLE AI/ML Trainee',
+    title: 'GOOGLE AI/ML - Trainee',
     company: 'EduSkills Foundation (AICTE)',
     description: 'Built and trained Machine learning models using TensorFlow, Keras, OpenCV, NN and worked on real-world mini-projects and assignments simulating industry problems using Python, Jupyter Notebooks, and Google Colab.',
     icon: <WorkIcon />,
   },
   {
     date: 'April 2025 - June 2025',
-    title: 'GOOGLE Data Analytics Trainee',
+    title: 'GOOGLE Data Analytics - Trainee',
     company: 'EduSkills Foundation (AICTE)',
     description: 'Gained proficiency in data cleaning and preparation using spreadsheets and SQL to organize and manipulate large datasets, and applied EDA with statistical thinking to identify trends. Utilized tools like Excel/Google Sheets and SQL (BigQuery) throughout the training.',
     icon: <WorkIcon />,
   },
   {
     date: 'May 2025 - June 2025',
-    title: 'AI Engineer (Internship)',
+    title: 'NLP Engineer - Intern',
     company: 'Maharashtra Remote Sensing Application Centre (MRSAC)',
-    description: 'Developing a personal voice assistant (NexusAI) using Python, NLP to assist in daily tasks and provide information on various topics which helps in enhancing productivity and accessibility as well as time management.',
+    description: 'Developed a personal voice assistant (NexusAI) using Python, NLP to assist in daily tasks and provide information on various topics which helps in enhancing productivity and accessibility as well as time management.',
     icon: <WorkIcon />,
   },
 ];
