@@ -248,7 +248,7 @@ function Hero() {
                   component="a"
                   href="/Bhuvan_Patil-Resume.pdf"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel=""
                 >
                   Resume
                 </ActionButton>
