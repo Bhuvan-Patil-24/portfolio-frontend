@@ -328,7 +328,7 @@ function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
           <Typography variant="body1" paragraph>
-          I'm Bhuvan Patil, a tech enthusiast and aspiring data scientist currently in my 3rd year pursuing a B.Tech in Computer Science Engineering with Honors in Data Science at SBJITMR, Nagpur.
+          I'm Bhuvan Patil, a tech enthusiast and aspiring data scientist currently in my Final year, pursuing a B.Tech degree in Computer Science Engineering with Honors in Data Science at SBJITMR, Nagpur.
           </Typography>
           </motion.div>
           <motion.div
