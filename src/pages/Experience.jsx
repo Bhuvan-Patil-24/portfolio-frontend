@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Container, Typography, Grid, Paper, styled } from '@mui/material';
 import { motion } from 'framer-motion';
 import WorkIcon from '@mui/icons-material/Work';
@@ -44,10 +43,10 @@ const ExperienceCard = styled(Paper)({
   },
 });
 
-const HighlightText = styled('span')({
-  color: '#FFA500',
-  fontWeight: 'bold',
-});
+// const HighlightText = styled('span')({
+//   color: '#FFA500',
+//   fontWeight: 'bold',
+// });
 
 const experiences = [
   {

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { AppBar, Toolbar, Button, Container, Box, IconButton, Typography, Avatar, Menu, MenuItem, Drawer, List, ListItem, ListItemText, useMediaQuery, useTheme } from '@mui/material';
+import { useState } from 'react';
+import { AppBar, Toolbar, Button, Container, Box, IconButton, Typography, Drawer, List, ListItem, ListItemText, useMediaQuery, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -8,6 +8,7 @@ import LinkIcon from '@mui/icons-material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import b1Logo from '../assets/images/b1_logo.png';
+import PropTypes from "prop-types";
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -99,7 +100,11 @@ const DrawerHeader = styled(Box)(({ theme }) => ({
   }
 }));
 
-function Layout({ children }) {
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+function Layout({children}) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));

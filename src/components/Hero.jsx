@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Box, Container, Typography, Button, styled, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import DownloadIcon from '@mui/icons-material/Download';
 import CodeIcon from '@mui/icons-material/Code';
 import TerminalIcon from '@mui/icons-material/Terminal';
-import DataObjectIcon from '@mui/icons-material/DataObject';
 import PsychologyIcon from '@mui/icons-material/Psychology';
-import StorageIcon from '@mui/icons-material/Storage';
-import WebIcon from '@mui/icons-material/Web';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import { useTheme } from '@mui/material/styles';
 import InsightsIcon from '@mui/icons-material/Insights';
@@ -33,7 +30,7 @@ const HighlightText = styled('span')(({ theme }) => ({
   fontWeight: 'bold',
 }));
 
-const ActionButton = styled(Button)(({ theme }) => ({
+const ActionButton = styled(Button)(() => ({
   padding: '0.8rem 2rem',
   borderRadius: '30px',
   textTransform: 'none',
@@ -70,7 +67,7 @@ const SkillIcon = styled(Box)(({ theme }) => ({
   color: '#fff',
 }));
 
-const AnimatedTextWrapper = styled(Box)(({ theme }) => ({
+const AnimatedTextWrapper = styled(Box)(() => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
@@ -97,40 +94,40 @@ function Hero() {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
-  
-  const animatedTexts = [
+
+  const animatedTexts = useMemo(() => [
     "Data Science",
     "Machine Learning",
     "Deep Learning",
     "Natural Language Processing",
     "Large Language Models",
     "Generative AI"
-  ];
+  ], []);
 
   const theme = useTheme();
 
   useEffect(() => {
     let timeout;
-    
+
     // Type the current text
     if (!isDeleting && displayText !== animatedTexts[textIndex]) {
       timeout = setTimeout(() => {
         setDisplayText(animatedTexts[textIndex].substring(0, displayText.length + 1));
       }, typingSpeed);
-    } 
+    }
     // Pause at the end
     else if (!isDeleting && displayText === animatedTexts[textIndex]) {
       timeout = setTimeout(() => {
         setIsDeleting(true);
         setTypingSpeed(50); // Delete faster
       }, 1500);
-    } 
+    }
     // Delete the text
     else if (isDeleting && displayText !== '') {
       timeout = setTimeout(() => {
         setDisplayText(displayText.substring(0, displayText.length - 1));
       }, typingSpeed);
-    } 
+    }
     // Move to next text
     else if (isDeleting && displayText === '') {
       setIsDeleting(false);
@@ -162,7 +159,7 @@ function Hero() {
                     borderRadius: '20px',
                   }}
                 >
-                  Hello There! 👋
+                  Hello There!!
                 </Typography>
               </motion.div>
 
@@ -171,21 +168,21 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <Typography 
-                  variant="h2" 
-                  sx={{ 
-                    mb: 1, 
+                <Typography
+                  variant="h2"
+                  sx={{
+                    mb: 1,
                     fontWeight: 'bold',
-                    fontSize: { xs: '2.5rem', sm: '3rem', md: '3.75rem' } 
+                    fontSize: { xs: '2.5rem', sm: '3rem', md: '3.75rem' }
                   }}
                 >
-                  I'm <HighlightText>Bhuvan Patil</HighlightText>,
+                  I&apos;m <HighlightText>Bhuvan Patil</HighlightText>,
                 </Typography>
-                
+
                 <AnimatedTextWrapper>
-                  <Typography 
-                    variant="h3" 
-                    sx={{ 
+                  <Typography
+                    variant="h3"
+                    sx={{
                       fontWeight: 'bold',
                       fontSize: { xs: '1.75rem', sm: '2.5rem', md: '3rem' },
                       mb: 1,
@@ -195,10 +192,10 @@ function Hero() {
                     Passionate about
                   </Typography>
                   <Box className="typewriter-container">
-                    <Typography 
+                    <Typography
                       variant="h3"
                       className="typewriter-text"
-                      sx={{ 
+                      sx={{
                         fontWeight: 'bold',
                         fontSize: { xs: '1.75rem', sm: '2.5rem', md: '3rem' },
                         width: 'auto',
@@ -206,7 +203,7 @@ function Hero() {
                       }}
                     >
                       {displayText}
-                </Typography>
+                    </Typography>
                   </Box>
                 </AnimatedTextWrapper>
               </motion.div>
@@ -216,10 +213,10 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Typography 
-                  variant="body1" 
-                  sx={{ 
-                    mb: 4, 
+                <Typography
+                  variant="body1"
+                  sx={{
+                    mb: 4,
                     color: theme.palette.text.secondary,
                     maxWidth: '600px',
                     fontSize: { xs: '0.9rem', sm: '1rem' }
@@ -308,18 +305,18 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <Typography 
-              variant="h4" 
-              component="h2" 
-              gutterBottom 
-              align="center" 
-              sx={{ 
+            <Typography
+              variant="h4"
+              component="h2"
+              gutterBottom
+              align="center"
+              sx={{
                 mb: 4,
                 fontSize: { xs: '1.75rem', sm: '2rem', md: '2.25rem' }
               }}
             >
-            About Me
-          </Typography>
+              About Me
+            </Typography>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -327,9 +324,9 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-          <Typography variant="body1" paragraph>
-          I'm Bhuvan Patil, a tech enthusiast and aspiring data scientist currently in my Final year, pursuing a B.Tech degree in Computer Science Engineering with Honors in Data Science at SBJITMR, Nagpur.
-          </Typography>
+            <Typography variant="body1" paragraph>
+              I&apos;m Bhuvan Patil, a tech enthusiast and aspiring data scientist currently in my Final year, pursuing a B.Tech degree in Computer Science Engineering with Honors in Data Science at SBJITMR, Nagpur.
+            </Typography>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -337,9 +334,9 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-          <Typography variant="body1" paragraph>
-          I'm passionate about exploring the intersections of data science, machine learning, and web development. My academic journey has equipped me with a strong foundation in programming fundamentals, while my self-directed learning has expanded my expertise across multiple domains.
-          </Typography>
+            <Typography variant="body1" paragraph>
+              I&apos;m passionate about exploring the intersections of data science, machine learning, and web development. My academic journey has equipped me with a strong foundation in programming fundamentals, while my self-directed learning has expanded my expertise across multiple domains.
+            </Typography>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -347,9 +344,9 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-          <Typography variant="body1" paragraph>
-          With a strong mathematical background and programming skills, I develop impactful solutions while fostering collaboration. My proactive approach and innovative thinking drive me to deliver high-quality results in every project I undertake.
-          </Typography>
+            <Typography variant="body1" paragraph>
+              With a strong mathematical background and programming skills, I develop impactful solutions while fostering collaboration. My proactive approach and innovative thinking drive me to deliver high-quality results in every project I undertake.
+            </Typography>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -357,9 +354,9 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-          <Typography variant="body1" paragraph>
-            I'm constantly learning and staying up-to-date with the latest technologies and industry trends. This commitment to continuous improvement allows me to bring fresh perspectives and innovative solutions to every project I work on. When I'm not coding, you can find me reading about new technologies, attending tech meetups, or working on personal projects that challenge me to grow as a developer.
-          </Typography>
+            <Typography variant="body1" paragraph>
+              I&apos;m constantly learning and staying up-to-date with the latest technologies and industry trends. This commitment to continuous improvement allows me to bring fresh perspectives and innovative solutions to every project I work on. When I&apos;m not coding, you can find me reading about new technologies, attending tech meetups, or working on personal projects that challenge me to grow as a developer.
+            </Typography>
           </motion.div>
         </Container>
       </AboutSection>
@@ -373,18 +370,18 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <Typography 
-              variant="h4" 
-              component="h2" 
-              gutterBottom 
-              align="center" 
-              sx={{ 
+            <Typography
+              variant="h4"
+              component="h2"
+              gutterBottom
+              align="center"
+              sx={{
                 mb: { xs: 4, md: 6 },
                 fontSize: { xs: '1.75rem', sm: '2rem', md: '2.25rem' }
               }}
             >
-            My Skills
-          </Typography>
+              My Skills
+            </Typography>
           </motion.div>
           <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
             <Grid item xs={12} sm={6} md={4}>
@@ -394,26 +391,26 @@ function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-              <SkillCard>
-                <SkillIcon>
-                  <CodeIcon fontSize="large" />
-                </SkillIcon>
-                  <Typography 
-                    variant="h6" 
+                <SkillCard>
+                  <SkillIcon>
+                    <CodeIcon fontSize="large" />
+                  </SkillIcon>
+                  <Typography
+                    variant="h6"
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Web Development
-                </Typography>
-                  <Typography 
-                    variant="body2" 
+                    Web Development
+                  </Typography>
+                  <Typography
+                    variant="body2"
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Frontend: HTML5, CSS3, JavaScript, React
-                  Backend: NodeJS, ExpressJS, MongoDB, MySQL
-                </Typography>
-              </SkillCard>
+                    Frontend: HTML5, CSS3, JavaScript, React
+                    Backend: NodeJS, ExpressJS, MongoDB, MySQL
+                  </Typography>
+                </SkillCard>
               </motion.div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
@@ -423,26 +420,26 @@ function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-              <SkillCard>
-                <SkillIcon>
-                  <InsightsIcon fontSize="large" />
-                </SkillIcon>
-                  <Typography 
-                    variant="h6" 
+                <SkillCard>
+                  <SkillIcon>
+                    <InsightsIcon fontSize="large" />
+                  </SkillIcon>
+                  <Typography
+                    variant="h6"
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Data Science & Analysis
-                </Typography>
-                  <Typography 
-                    variant="body2" 
+                    Data Science & Analysis
+                  </Typography>
+                  <Typography
+                    variant="body2"
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Power BI, Tableau, MSExcel, EDA, Pandas,
-                  Numpy, Matplotlib, Seaborn
-                </Typography>
-              </SkillCard>
+                    Power BI, Tableau, MSExcel, EDA, Pandas,
+                    Numpy, Matplotlib, Seaborn
+                  </Typography>
+                </SkillCard>
               </motion.div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
@@ -452,26 +449,26 @@ function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-              <SkillCard>
-                <SkillIcon>
-                  <PrecisionManufacturingIcon fontSize="large" />
-                </SkillIcon>
-                  <Typography 
-                    variant="h6" 
+                <SkillCard>
+                  <SkillIcon>
+                    <PrecisionManufacturingIcon fontSize="large" />
+                  </SkillIcon>
+                  <Typography
+                    variant="h6"
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Machine learning
-                </Typography>
-                  <Typography 
-                    variant="body2" 
+                    Machine learning
+                  </Typography>
+                  <Typography
+                    variant="body2"
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Mathematics, NLP, TensorFlow, Computer Vision,
-                  Deep Learning, Jupyter, Scikit-learn
-                </Typography>
-              </SkillCard>
+                    Mathematics, NLP, TensorFlow, Computer Vision,
+                    Deep Learning, Jupyter, Scikit-learn
+                  </Typography>
+                </SkillCard>
               </motion.div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
@@ -481,25 +478,25 @@ function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-              <SkillCard>
-                <SkillIcon>
-                  <TerminalIcon fontSize="large" />
-                </SkillIcon>
-                  <Typography 
-                    variant="h6" 
+                <SkillCard>
+                  <SkillIcon>
+                    <TerminalIcon fontSize="large" />
+                  </SkillIcon>
+                  <Typography
+                    variant="h6"
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Programming Languages
-                </Typography>
-                  <Typography 
-                    variant="body2" 
+                    Programming Languages
+                  </Typography>
+                  <Typography
+                    variant="body2"
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  C, JavaScript, Python, SQL
-                </Typography>
-              </SkillCard>
+                    C, JavaScript, Python, SQL
+                  </Typography>
+                </SkillCard>
               </motion.div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
@@ -509,25 +506,25 @@ function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-              <SkillCard>
-                <SkillIcon>
-                  <DesignServicesIcon fontSize="large" />
-                </SkillIcon>
-                  <Typography 
-                    variant="h6" 
+                <SkillCard>
+                  <SkillIcon>
+                    <DesignServicesIcon fontSize="large" />
+                  </SkillIcon>
+                  <Typography
+                    variant="h6"
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Designing & Diagraming
-                </Typography>
-                  <Typography 
-                    variant="body2" 
+                    Designing & Diagraming
+                  </Typography>
+                  <Typography
+                    variant="body2"
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Canva, Figma, Draw.io
-                </Typography>
-              </SkillCard>
+                    Canva, Figma, Draw.io
+                  </Typography>
+                </SkillCard>
               </motion.div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
@@ -537,25 +534,25 @@ function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-              <SkillCard>
-                <SkillIcon>
-                  <PsychologyIcon fontSize="large" />
-                </SkillIcon>
-                  <Typography 
-                    variant="h6" 
+                <SkillCard>
+                  <SkillIcon>
+                    <PsychologyIcon fontSize="large" />
+                  </SkillIcon>
+                  <Typography
+                    variant="h6"
                     gutterBottom
                     sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
                   >
-                  Tools & Other Skills
-                </Typography>
-                  <Typography 
-                    variant="body2" 
+                    Tools & Other Skills
+                  </Typography>
+                  <Typography
+                    variant="body2"
                     color="text.secondary"
                     sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}
                   >
-                  Git, Linux, DSA, OOPs, Debugging, Adaptability, Prompt Engineering, Time Management
-                </Typography>
-              </SkillCard>
+                    Git, Linux, DSA, OOPs, Debugging, Adaptability, Prompt Engineering, Time Management
+                  </Typography>
+                </SkillCard>
               </motion.div>
             </Grid>
           </Grid>
