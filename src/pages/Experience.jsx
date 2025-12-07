@@ -91,6 +91,20 @@ const experiences = [
     // description: 'Developed a personal voice assistant (NexusAI) using Python, NLP to assist in daily tasks and provide information on various topics which helps in enhancing productivity and accessibility as well as time management.',
     icon: <WorkIcon />,
   },
+  {
+    date: 'November 2025 - January 2026',
+    title: 'AI Virtual Internship 6.0',
+    company: 'Infosys Springboard',
+    // description: 'Developed a personal voice assistant (NexusAI) using Python, NLP to assist in daily tasks and provide information on various topics which helps in enhancing productivity and accessibility as well as time management.',
+    icon: <WorkIcon />,
+  },
+  {
+    date: 'December 2025 - May 2026',
+    title: 'AI/ML Intern',
+    company: 'Micronet Solutions',
+    // description: 'Developed a personal voice assistant (NexusAI) using Python, NLP to assist in daily tasks and provide information on various topics which helps in enhancing productivity and accessibility as well as time management.',
+    icon: <WorkIcon />,
+  },
 ];
 
 function Experience() {
