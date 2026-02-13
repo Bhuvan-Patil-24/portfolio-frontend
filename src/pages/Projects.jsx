@@ -205,6 +205,9 @@ function Projects() {
                           backgroundColor: '#FF8C00',
                         },
                       }}
+                      href={project.demoLink}
+                      target="_blank" 
+                      rel="noopener noreferrer"
                     >
                       Live Demo
                     </Button>
