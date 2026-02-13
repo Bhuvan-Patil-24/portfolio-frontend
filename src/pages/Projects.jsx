@@ -54,7 +54,7 @@ const projects = [
       'HuggingFace',
       'Pydantic'
     ],
-    githubLink: 'https://github.com/Bhuvan-Patil-24/Internal-Chatbot-with-RBAC-Project',
+    githubLink: 'https://github.com/Bhuvan-Patil-24/Internal-Chatbot-with-RBAC/',
     demoLink: 'https://bhuvanpatil24-sentinelai.hf.space/',
   },
   {
@@ -71,7 +71,7 @@ const projects = [
       'Docker',
       'OpenStreetMap'
     ],
-    githubLink: 'https://github.com/Bhuvan-Patil-24/rabi-ndvi-gis',
+    githubLink: 'https://github.com/Bhuvan-Patil-24/crop_prediction/',
     demoLink: 'https://bhuvanpatil24-rabi-ndvi-gis.hf.space/',
   },  
   {
